@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Cà Phê Đen",
+    "image": "data/img-1.png",
+    "description": "Cà phê đen nguyên chất với hương vị đậm đà và mạnh mẽ.",
+    "stock": 20
+  },
+  {
+    "id": 2,
+    "name": "Cà Phê Sữa",
+    "image": "data/img-2.png",
+    "description": "Cà phê hòa quyện cùng sữa đặc mang đến vị ngọt béo hấp dẫn.",
+    "stock": 15
+  },
+  {
+    "id": 3,
+    "name": "Bạc Xỉu",
+    "image": "data/img-3.png",
+    "description": "Thức uống truyền thống pha giữa cà phê và sữa tươi, nhẹ nhàng và thơm béo.",
+    "stock": 10
+  },
+  {
+    "id": 4,
+    "name": "Espresso",
+    "image": "data/img-4.png",
+    "description": "Espresso đậm đặc với lớp crema vàng óng, tinh túy của cà phê Ý.",
+    "stock": 8
+  },
+  {
+    "id": 5,
+    "name": "Trà Đào",
+    "image": "data/img-5.png",
+    "description": "Trà đào thơm mát, kết hợp lát đào tươi ngọt ngào.",
+    "stock": 25
+  },
+  {
+    "id": 6,
+    "name": "Trà Vải",
+    "image": "data/img-6.png",
+    "description": "Trà vải thanh mát, vị ngọt nhẹ và hương thơm quyến rũ.",
+    "stock": 18
+  },
+  {
+    "id": 7,
+    "name": "Latte",
+    "image": "data/img-7.png",
+    "description": "Cà phê latte nhẹ nhàng với lớp sữa nóng tạo hình nghệ thuật.",
+    "stock": 12
+  },
+  {
+    "id": 8,
+    "name": "Cappuccino",
+    "image": "data/img-8.png",
+    "description": "Cappuccino béo mịn với bọt sữa dày và hương vị đậm đà.",
+    "stock": 10
+  },
+  {
+    "id": 9,
+    "name": "Matcha",
+    "image": "data/img-9.png",
+    "description": "Matcha Nhật Bản nguyên chất, vị thanh dịu và tốt cho sức khỏe.",
+    "stock": 0
+  },
+  {
+    "id": 10,
+    "name": "Trà Đá",
+    "image": "data/img-10.png",
+    "description": "Trà đá mát lạnh, giải khát tuyệt vời cho ngày hè nóng nực.",
+    "stock": 14
+  }
+]
