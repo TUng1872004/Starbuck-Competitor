@@ -14,14 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         
                         let productHtml = `
                             <div class="col-md-4">
-                                <a href="product.html?id=${product.id}" style="text-decoration: none;">
-                                    <div class="container_main">
-                                        <img src="${product.image}" alt="${product.name}" class="image">
-                                        <div class="overlay">
-                                            <div class="text"><i class="fa fa-search" aria-hidden="true"></i></div>
-                                        </div>
-                                    </div>
-                                </a>
 
                         <a href="product.html?id=${product.id}" style="text-decoration: none;">
                             <div class="container_main">
