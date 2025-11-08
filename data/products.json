@@ -1,72 +1,135 @@
 [
   {
     "id": 1,
-    "name": "Cà Phê Đen",
-    "image": "data/img-1.png",
-    "description": "Cà phê đen nguyên chất với hương vị đậm đà và mạnh mẽ.",
+    "name": "Americano",
+    "image": "data/coffee/americano-coffee.png",
+    "description": "Cà phê Americano được pha bằng cách thêm nước nóng vào espresso, mang đến vị nhẹ nhàng nhưng vẫn giữ được hương vị đậm đà.",
     "stock": 20
   },
   {
     "id": 2,
-    "name": "Cà Phê Sữa",
-    "image": "data/img-2.png",
-    "description": "Cà phê hòa quyện cùng sữa đặc mang đến vị ngọt béo hấp dẫn.",
+    "name": "Cappuccino",
+    "image": "data/coffee/cappuccino.png",
+    "description": "Cappuccino với lớp bọt sữa dày mịn, hòa quyện cùng espresso tạo nên hương vị cân bằng và thơm béo.",
     "stock": 15
   },
   {
     "id": 3,
-    "name": "Bạc Xỉu",
-    "image": "data/img-3.png",
-    "description": "Thức uống truyền thống pha giữa cà phê và sữa tươi, nhẹ nhàng và thơm béo.",
-    "stock": 10
-  },
-  {
-    "id": 4,
-    "name": "Espresso",
-    "image": "data/img-4.png",
-    "description": "Espresso đậm đặc với lớp crema vàng óng, tinh túy của cà phê Ý.",
-    "stock": 8
-  },
-  {
-    "id": 5,
-    "name": "Trà Đào",
-    "image": "data/img-5.png",
-    "description": "Trà đào thơm mát, kết hợp lát đào tươi ngọt ngào.",
-    "stock": 25
-  },
-  {
-    "id": 6,
-    "name": "Trà Vải",
-    "image": "data/img-6.png",
-    "description": "Trà vải thanh mát, vị ngọt nhẹ và hương thơm quyến rũ.",
-    "stock": 18
-  },
-  {
-    "id": 7,
-    "name": "Latte",
-    "image": "data/img-7.png",
-    "description": "Cà phê latte nhẹ nhàng với lớp sữa nóng tạo hình nghệ thuật.",
+    "name": "Cold Brew",
+    "image": "data/coffee/Cold-brew.png",
+    "description": "Cold Brew được ủ lạnh trong nhiều giờ, mang lại hương vị mượt mà, ít chua và tươi mát.",
     "stock": 12
   },
   {
+    "id": 4,
+    "name": "Creamy Cappuccino",
+    "image": "data/coffee/creamy-cappucino.png",
+    "description": "Cappuccino béo ngậy với hương vị kem sữa hòa quyện, tạo cảm giác êm dịu và sang trọng.",
+    "stock": 10
+  },
+  {
+    "id": 5,
+    "name": "Espresso",
+    "image": "data/coffee/espresso-coffee.png",
+    "description": "Cà phê espresso đậm đặc, tinh túy của hạt cà phê rang, với lớp crema vàng óng đặc trưng.",
+    "stock": 14
+  },
+  {
+    "id": 6,
+    "name": "Flat White",
+    "image": "data/coffee/flat-white.png",
+    "description": "Flat White là sự kết hợp tinh tế giữa espresso và sữa nóng, ít bọt, mang đến vị cà phê mượt mà.",
+    "stock": 9
+  },
+  {
+    "id": 7,
+    "name": "Frappé",
+    "image": "data/coffee/frappé.png",
+    "description": "Frappé mát lạnh, xay nhuyễn cùng đá, mang lại cảm giác sảng khoái và hương vị ngọt ngào.",
+    "stock": 18
+  },
+  {
     "id": 8,
-    "name": "Cappuccino",
-    "image": "data/img-8.png",
-    "description": "Cappuccino béo mịn với bọt sữa dày và hương vị đậm đà.",
-    "stock": 0
+    "name": "Iced Latte",
+    "image": "data/coffee/iced-latte.png",
+    "description": "Latte đá thơm nhẹ, kết hợp giữa espresso và sữa tươi mát lạnh, phù hợp cho ngày nắng nóng.",
+    "stock": 20
   },
   {
     "id": 9,
-    "name": "Matcha",
-    "image": "data/img-9.png",
-    "description": "Matcha Nhật Bản nguyên chất, vị thanh dịu và tốt cho sức khỏe.",
-    "stock": 0
+    "name": "Iced Mocha Latte",
+    "image": "data/coffee/iced-mocha-latte.png",
+    "description": "Cà phê mocha đá kết hợp giữa espresso, sữa và chocolate, mang đến vị ngọt ngào, béo ngậy.",
+    "stock": 16
   },
   {
     "id": 10,
-    "name": "Trà Đá",
-    "image": "data/img-10.png",
-    "description": "Trà đá mát lạnh, giải khát tuyệt vời cho ngày hè nóng nực.",
-    "stock": 14
+    "name": "Latte Macchiato",
+    "image": "data/coffee/latte-machiatto.png",
+    "description": "Latte Macchiato với lớp espresso nhẹ nhàng đổ lên sữa nóng, tạo nên hương vị tinh tế và hấp dẫn.",
+    "stock": 13
+  },
+  {
+    "id": 11,
+    "name": "Trà Đen",
+    "image": "data/tea/black-tea.png",
+    "description": "Trà đen đậm đà với hương vị mạnh mẽ, giúp tỉnh táo và sảng khoái tinh thần.",
+    "stock": 22
+  },
+  {
+    "id": 12,
+    "name": "Trà Hoa Cúc",
+    "image": "data/tea/chamomile-tea.png",
+    "description": "Trà hoa cúc thanh mát, giúp thư giãn, giảm căng thẳng và hỗ trợ giấc ngủ ngon.",
+    "stock": 18
+  },
+  {
+    "id": 13,
+    "name": "Matcha Nóng",
+    "image": "data/tea/hot-matcha-latte.png",
+    "description": "Matcha latte nóng với vị trà xanh đậm đà kết hợp cùng sữa béo, tạo cảm giác ấm áp.",
+    "stock": 12
+  },
+  {
+    "id": 14,
+    "name": "Matcha Đá",
+    "image": "data/tea/iced-matcha-latte.png",
+    "description": "Matcha latte đá tươi mát, vị trà xanh dịu nhẹ hòa quyện cùng sữa, thơm ngon và mát lạnh.",
+    "stock": 16
+  },
+  {
+    "id": 15,
+    "name": "Trà Lài Dứa",
+    "image": "data/tea/jasmine-tea-and-pineapple.png",
+    "description": "Trà lài kết hợp hương dứa tươi mát, mang đến vị ngọt thanh và hương thơm nhiệt đới.",
+    "stock": 19
+  },
+  {
+    "id": 16,
+    "name": "Kombucha",
+    "image": "data/tea/kombucha.png",
+    "description": "Trà lên men Kombucha chứa lợi khuẩn, hỗ trợ tiêu hóa và tăng cường sức khỏe.",
+    "stock": 0
+  },
+  {
+    "id": 17,
+    "name": "Trà Chanh Mật Ong",
+    "image": "data/tea/lemon-honey-tea.png",
+    "description": "Trà chanh mật ong thanh mát, giúp giải nhiệt, tăng đề kháng và tốt cho giọng nói.",
+    "stock": 21
+  },
+  {
+    "id": 18,
+    "name": "Trà Ô Long Vải",
+    "image": "data/tea/oolong-lychee.png",
+    "description": "Trà ô long hòa quyện cùng hương vải ngọt ngào, mang lại cảm giác tươi mới và sang trọng.",
+    "stock": 17
+  },
+  {
+    "id": 19,
+    "name": "Trà Đào Lạnh",
+    "image": "data/tea/peach-iced-tea.png",
+    "description": "Trà đào lạnh thơm mát, vị ngọt dịu của đào tươi kết hợp cùng trà đậm đà.",
+    "stock": 25
   }
 ]
