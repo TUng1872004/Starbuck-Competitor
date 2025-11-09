@@ -537,16 +537,17 @@ img.image {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-height: 600px;  
+  width: 600px;
+  height: 600px;
+  max-height: 800px;  
 }
 
 
 
 /* Ảnh sản phẩm */
 .product-image {
-  width: 100%;
-  max-height: 450px;  
+  width: 150%;
+  height: 450px;  
   border-radius: 15px;
   margin-bottom: 1px;
 }

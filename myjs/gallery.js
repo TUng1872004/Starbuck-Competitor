@@ -11,11 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-    fetch('data/products.json')
+    fetch('/data/products.json')
         .then(response => response.json())
         .then(products => {
             productsData = products;
-
             // Show first batch
             renderProducts();
         })

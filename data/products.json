@@ -4,14 +4,16 @@
     "name": "Americano",
     "image": "data/coffee/americano-coffee.png",
     "description": "Cà phê Americano được pha bằng cách thêm nước nóng vào espresso, mang đến vị nhẹ nhàng nhưng vẫn giữ được hương vị đậm đà.",
-    "stock": 20
+    "stock": 19,
+    "order": 1
   },
   {
     "id": 2,
     "name": "Cappuccino",
     "image": "data/coffee/cappuccino.png",
     "description": "Cappuccino với lớp bọt sữa dày mịn, hòa quyện cùng espresso tạo nên hương vị cân bằng và thơm béo.",
-    "stock": 15
+    "stock": 9,
+    "order": 6
   },
   {
     "id": 3,
