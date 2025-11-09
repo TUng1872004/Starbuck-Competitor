@@ -13,8 +13,8 @@
     "name": "Cappuccino",
     "image": "data/coffee/cappuccino.png",
     "description": "Cappuccino với lớp bọt sữa dày mịn, hòa quyện cùng espresso tạo nên hương vị cân bằng và thơm béo.",
-    "stock": 9,
-    "order": 6,
+    "stock": 7,
+    "order": 8,
     "price": 44000
   },
   {
@@ -86,8 +86,9 @@
     "name": "Trà Đen",
     "image": "data/tea/black-tea.png",
     "description": "Trà đen đậm đà với hương vị mạnh mẽ, giúp tỉnh táo và sảng khoái tinh thần.",
-    "stock": 22,
-    "price": 37000
+    "stock": 5,
+    "price": 37000,
+    "order": 17
   },
   {
     "id": 12,
@@ -142,16 +143,17 @@
     "name": "Trà Ô Long Vải",
     "image": "data/tea/oolong-lychee.png",
     "description": "Trà ô long hòa quyện cùng hương vải ngọt ngào, mang lại cảm giác tươi mới và sang trọng.",
-    "stock": 17,
-    "price": 44000
+    "stock": 8,
+    "price": 44000,
+    "order": 9
   },
   {
     "id": 19,
     "name": "Trà Đào Lạnh",
     "image": "data/tea/peach-iced-tea.png",
     "description": "Trà đào lạnh thơm mát, vị ngọt dịu của đào tươi kết hợp cùng trà đậm đà.",
-    "stock": 1,
+    "stock": 0,
     "price": 39000,
-    "order": 24
+    "order": 2
   }
 ]
