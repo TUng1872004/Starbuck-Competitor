@@ -1,29 +1,36 @@
 document.addEventListener("DOMContentLoaded", function() {
     let productsData = [];        // Store all products
+    let filteredProducts = [];    // Store products after search filter
     let itemsPerPage = 12;        // Number of items to show per batch
     let currentIndex = 0;         // Track how many items have been displayed
 
     const container = document.getElementById('product-list-container');
     const seeMoreBtn = document.getElementById('see-more-btn');
+    const searchInput = document.getElementById('searchInput');
 
     if (!container) {
         console.error('Không tìm thấy #product-list-container. Sai rồi đại ca.');
         return;
     }
 
+    // Load products from JSON
     fetch('/data/products.json')
         .then(response => response.json())
         .then(products => {
             productsData = products;
-            // Show first batch
+            // Optional: sort by order descending
+            productsData.sort((a, b) => (b.order || 0) - (a.order || 0));
+            filteredProducts = productsData; // initially all
             renderProducts();
         })
-        .catch(error => console.error('Lỗi rồi đại ca. Không tải được file products.json:', error));
+        .catch(error => console.error('Lỗi rồi. Không tải được file products.json:', error));
 
+    // Render products based on filteredProducts and currentIndex
     function renderProducts() {
-        const slice = productsData.slice(currentIndex, currentIndex + itemsPerPage);
+        const slice = filteredProducts.slice(currentIndex, currentIndex + itemsPerPage);
+
         slice.forEach(product => {
-            let productHtml = `
+            const productHtml = `
                 <div class="col-md-3">
                     <a href="product.html?id=${product.id}" style="text-decoration: none;">
                         <div class="container_main">
@@ -45,11 +52,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
         currentIndex += itemsPerPage;
 
-        // Hide button if all products are displayed
-        if (currentIndex >= productsData.length) {
-            seeMoreBtn.style.display = 'none';
-        }
+        // Hide button if all filtered products are displayed
+        seeMoreBtn.style.display = currentIndex >= filteredProducts.length ? 'none' : 'block';
     }
 
+    // "See More" button
     seeMoreBtn.addEventListener('click', renderProducts);
+
+    // Search functionality
+    searchInput.addEventListener('input', () => {
+        const keyword = searchInput.value.toLowerCase();
+
+        // Filter products by name (you can also include description)
+        filteredProducts = productsData.filter(p => p.name.toLowerCase().includes(keyword));
+
+        // Reset container and pagination
+        currentIndex = 0;
+        container.innerHTML = "";
+        renderProducts();
+    });
 });
