@@ -54,7 +54,6 @@ async function loadProduct() {
     console.error("Error loading product:", error);
     document.getElementById("productName").textContent = "Error ! Cannot find item" + id;
     document.getElementById("productMetadata").textContent = error;
-
   }
 
 }
