@@ -30,8 +30,19 @@ document.addEventListener("DOMContentLoaded", function() {
         const slice = filteredProducts.slice(currentIndex, currentIndex + itemsPerPage);
 
         slice.forEach(product => {
-            const productHtml = `
-                <div class="col-md-3">
+            //set price
+            let priceText = product.price ? formatPrice(product.price) : "Giá đang cập nhật";
+            // out of stock
+            let stockText = "";
+            if (product.stock <= 0) {
+                stockText = `
+                    <p style="text-align:center; color:#ff0000; font-weight:bold; margin-top:4px;">
+                        Hết hàng
+                    </p>`;
+            }
+
+            let productHtml = `
+                <div class="col-md-3 mb-4">
                     <a href="product.html?id=${product.id}" style="text-decoration: none;">
                         <div class="container_main">
                             <img src="${product.image}" alt="${product.name}" class="preview_item">
@@ -45,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
                             ${product.name}
                         </h4>
                     </a>
+                    <p style="text-align:center; color:#d9534f; font-weight:bold;">
+                        ${priceText}
+                    </p>
                 </div>
             `;
             container.innerHTML += productHtml;
@@ -72,3 +86,10 @@ document.addEventListener("DOMContentLoaded", function() {
         renderProducts();
     });
 });
+
+function formatPrice(price) {
+    return Number(price).toLocaleString("vi-VN", {
+        style: "currency",
+        currency: "VND"
+    });
+}

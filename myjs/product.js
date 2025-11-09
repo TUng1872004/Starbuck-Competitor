@@ -24,7 +24,7 @@ async function loadProduct() {
     }    
 
     const orderbox = document.getElementById('product-box');
-
+    const priceText = product.price ? formatPrice(product.price) : "Giá đang cập nhật";
     if (product.stock && product.stock >0){
         let Html = `
         <div id="quantity" class="quantity-container">                
@@ -36,7 +36,11 @@ async function loadProduct() {
                         class="quantity-input" 
                         min="1" 
                         max= ${product.stock}
-                        value="1"></input>            
+                        value="1"></input>   
+                        
+              <p style="text-align:center; color:#d9534f; font-weight:bold;">
+                        ${priceText}
+                    </p>
         </div>
         <button id="orderButton" class="order-button">Đặt hàng</button>`
         orderbox.innerHTML += Html
@@ -86,13 +90,28 @@ async function loadProduct() {
     document.getElementById("productImage").src = product.image;
     document.getElementById("productImage").alt = product.name;
 
+    const priceElement = document.getElementById("productPrice");
+    if (priceElement) {
+      if (product.price) {
+        priceElement.textContent = formatPrice(product.price);
+      } else {
+        priceElement.textContent = "Giá đang cập nhật";
+      }
+    }
+
   } catch (error){
     console.error("Error loading product:", error);
     document.getElementById("productName").textContent = "Error ! Cannot find item" + id;
     document.getElementById("productMetadata").textContent = error;
-
   }
 
+}
+
+function formatPrice(price) {
+  return Number(price).toLocaleString("vi-VN", {
+    style: "currency",
+    currency: "VND"
+  });
 }
 
 loadProduct();
