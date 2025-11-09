@@ -50,12 +50,28 @@ async function loadProduct() {
     document.getElementById("productImage").src = product.image;
     document.getElementById("productImage").alt = product.name;
 
+    const priceElement = document.getElementById("productPrice");
+    if (priceElement) {
+      if (product.price) {
+        priceElement.textContent = formatPrice(product.price);
+      } else {
+        priceElement.textContent = "Giá đang cập nhật";
+      }
+    }
+
   } catch (error){
     console.error("Error loading product:", error);
     document.getElementById("productName").textContent = "Error ! Cannot find item" + id;
     document.getElementById("productMetadata").textContent = error;
   }
 
+}
+
+function formatPrice(price) {
+  return Number(price).toLocaleString("vi-VN", {
+    style: "currency",
+    currency: "VND"
+  });
 }
 
 loadProduct();
