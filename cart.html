@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Shopping Cart</title>
+
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+      <!-- main style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css">
+
+      <!-- custom cart css -->
+      <link rel="stylesheet" href="css/cart.css">
+
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+      <!-- owl -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+      <!-- fancybox -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+   </head>
+   <body>
+
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" class="rounded-circle"></a>
+               </div>
+
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="gallery.html">Products</a></li>
+                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--header section end -->
+
+      <!-- Cart Title -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <h1 class="contact_text">Shopping Cart</h1>
+         </div>
+      </div>
+
+      <!-- Cart Content -->
+      <div class="contact_section_2 layout_padding">
+         <div class="container">
+
+            <div class="table-responsive">
+               <table class="table cart_table border">
+                  <thead class="bg-light">
+                     <tr>
+                        <th>Product</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                     </tr>
+                  </thead>
+
+                  <tbody>
+                     <tr>
+                        <td><img src="images/products/product1.jpg" class="cart_item_img"></td>
+                        <td>Sample Product A</td>
+                        <td>500,000₫</td>
+                        <td><input type="number" value="1" min="1" class="qty_input"></td>
+                        <td>500,000₫</td>
+                        <td><i class="fa fa-trash-o remove_item"></i></td>
+                     </tr>
+
+                     <tr>
+                        <td><img src="images/products/product2.jpg" class="cart_item_img"></td>
+                        <td>Sample Product B</td>
+                        <td>350,000₫</td>
+                        <td><input type="number" value="1" min="1" class="qty_input"></td>
+                        <td>350,000₫</td>
+                        <td><i class="fa fa-trash-o remove_item"></i></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="cart_summary">
+               <h3>Order Summary</h3>
+               <p>Subtotal: <strong>850,000₫</strong></p>
+               <p>Shipping: <strong>Free</strong></p>
+               <hr>
+               <h4>Total: <strong>850,000₫</strong></h4>
+
+               <div class="checkout_btn mt-3">
+                  <a href="#">Proceed to Checkout</a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">About</h3>
+                  <p class="footer_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               </div>
+
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">Các thẻ</h3>
+                  <div class="footer_menu">
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">Contact Us</h3>
+                  <ul class="location_text">
+                     <li><i class="fa fa-map-marker"></i> <span>HCMC University of Technology</span></li>
+                     <li><i class="fa fa-phone"></i> <span>+01 1234567890</span></li>
+                     <li><i class="fa fa-envelope"></i> <span>demo@gmail.com</span></li>
+                  </ul>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+
+      <!-- JavaScript files -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+
+      <!-- custom cart js -->
+      <script src="js/cart.js"></script>
+   </body>
+</html>
