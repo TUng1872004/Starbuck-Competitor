@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Payment</title>
+
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+      <!-- main style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css">
+
+      <!-- custom cart css -->
+      <link rel="stylesheet" href="css/cart.css">
+
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+      <!-- owl -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+      <!-- fancybox -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+   </head>
+   <style>
+        .qr{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .ok{
+            margin-top: 10px;
+            background-color: rgb(0, 160, 0);
+            color: white;
+            font-size: 1.2rem;
+            width: fit-content;
+            padding-inline: 5px;
+            border-radius: 5px;
+        }
+        .hidden{
+            display: none;
+        }
+        .hidden > *{
+            display: none;
+        }
+        .success{
+            display: flex; 
+            column-gap: 10px; 
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+   </style>
+   <body>
+    <div class="qr">
+        <img src="images/qr.png" alt="QR code">
+        <button class="ok" onclick="toggleSuccess()">Kiểm tra thanh toán</button>
+    </div>
+    <div class="success hidden">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 150px;"><g id="SVGRepo_bgCarrier" stroke-width="0" ></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#04ff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="0.34" d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#04ff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        <div style="font-size: 3em; color: rgb(0, 184, 0); text-wrap: nowrap"> Thanh toán thành công! </div>
+        <div style="position: fixed; top: 98%; left: 50%; transform: translate(-50%, -50%);">
+            Tự động quay lại sau 5 giây...
+        </div>
+    </div>
+   </body>
+   <script>
+        function toggleSuccess(){
+            const success = document.querySelector('.success')
+            success.classList.remove('hidden')
+            const qr = document.querySelector('.qr')
+            qr.classList.add('hidden')
+            setTimeout(() => {
+                window.location.href = '/index.html'
+            },5000)
+        }
+   </script>
+</html>

@@ -13,8 +13,8 @@
     "name": "Cappuccino",
     "image": "data/coffee/cappuccino.png",
     "description": "Cappuccino với lớp bọt sữa dày mịn, hòa quyện cùng espresso tạo nên hương vị cân bằng và thơm béo.",
-    "stock": 7,
-    "order": 8,
+    "stock": 4,
+    "order": 11,
     "price": 44000
   },
   {
@@ -86,9 +86,9 @@
     "name": "Trà Đen",
     "image": "data/tea/black-tea.png",
     "description": "Trà đen đậm đà với hương vị mạnh mẽ, giúp tỉnh táo và sảng khoái tinh thần.",
-    "stock": 5,
+    "stock": 0,
     "price": 37000,
-    "order": 17
+    "order": 22
   },
   {
     "id": 12,

@@ -28,7 +28,7 @@
    border-radius: 10px;
 }
 
-.checkout_btn a {
+.checkout_btn a, .checkout_btn button {
    display: inline-block;
    padding: 12px 30px;
    background-color: #8b2f2f;
