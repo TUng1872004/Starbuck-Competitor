@@ -675,6 +675,7 @@ a:hover {
     float: left;
     font-size: 40px;
     color: #ffffff;
+    -webkit-text-stroke: 1px #0d0d0d;
     font-weight: bold;
     text-align: center;
 }
@@ -683,7 +684,8 @@ a:hover {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: #0d0d0d;
+    -webkit-text-stroke: 1px #060606;
     margin: 0px;
     text-align: center;
 }
