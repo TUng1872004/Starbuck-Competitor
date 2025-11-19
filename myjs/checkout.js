@@ -6,6 +6,7 @@ function showSuccessPopup() {
     // Auto close after 3 seconds
     setTimeout(() => {
         modal.style.display = "none";
+        window.location.href = '/index.html'
     }, 5000);
 }
 

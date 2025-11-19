@@ -54,19 +54,18 @@ fetch(
                 });
             });
         });
-
-        qrNavigation = () => {
-            fetch("http://localhost:5000/api/remove-cart", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({}),
-            })
-            .then(
-                _ => {
-                    window.location.href = '/qr.html'
-                }
-            );
-        }
     }
 )
 
+qrNavigation = () => {
+    fetch("http://localhost:5000/api/remove-cart", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({}),
+    })
+    .then(
+        _ => {
+            window.location.href = '/checkout.html'
+        }
+    );
+}
