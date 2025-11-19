@@ -28,7 +28,7 @@ async function loadProduct() {
     if (product.stock && product.stock >0){
         let Html = `
         <div id="quantity" class="quantity-container">                
-            <label for="quantity" class="quantity-label">Số lượng:</label>
+            <label for="quantity" class="quantity-label align-middle">Số lượng:</label>
                     <input 
                         type="number" 
                         name="quantity" 
